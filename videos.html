@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<title>Brandon J. Hurst</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+    <!-- Sidebar/menu -->
+
+    <nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+        <div class="w3-container">
+            <img src="imgs/bjh.jpg" alt="brandon" style="width:95%;" class="w3-round"><br><br>
+        </div>
+        <div class="w3-bar-block">
+            <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-th-large fa-fw w3-margin-right"></i>IMAGES</a>
+            <a href="videos.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-film fa-fw w3-margin-right"></i>VIDEOS</a>
+            <a href="education.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-book fa-fw w3-margin-right"></i>EDUCATION</a>
+            <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a>
+            <a href="contact.html" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-envelope fa-fw w3-margin-right"></i>CONTACT</a>
+        </div>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+
+    <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+    <!-- !PAGE CONTENT! -->
+
+    <div class="w3-main w3-grey" style="margin-left:300px">
+
+        <!-- Header -->
+
+        <header>
+            <div class="w3-container w3-padding">
+            </div>
+        </header>
+
+        <!-- YouTube Section -->
+
+        <div class="w3-container w3-padding-large w3-grey w3-center">
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ey-qsSIDt4E" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/2wG9_bF7T24" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/t72uo3yYHlA" allowfullscreen></iframe>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/myJJjhSfTOA" allowfullscreen></iframe>
+
+        </div>
+
+        <!-- Footer -->
+
+        <footer class="w3-container w3-padding-32 w3-dark-grey">
+
+            <div class="w3-row-padding">
+                <div class="w3-panel w3-xxlarge w3-center">
+                    <a href="https://www.facebook.com/brandon.j.hurst.7" class="fa fa-facebook-official w3-hover-opacity"></a>
+                    <a href="https://www.instagram.com/brandonhurst/?hl=en" class="fa fa-instagram w3-hover-opacity"></a>
+                    <a href="https://twitter.com/brandonhurst36" class="fa fa-twitter w3-hover-opacity"></a>
+                    <a href="https://www.linkedin.com/in/brandon-j-hurst-9a5801128/" class="fa fa-linkedin w3-hover-opacity"></a>
+                </div>
+            </div>
+
+        </footer>
+
+        <div class="w3-black w3-center w3-padding-24">Copyright: All content on this web site is the property of Brandon J. Hurst, Inc. or its content suppliers and protected by United States and international copyright laws.
+        </div>
+
+        <!-- End page content -->
+
+    </div>
+
+    <script>
+        // Script to open and close sidebar
+        function w3_open() {
+            document.getElementById("mySidebar").style.display = "block";
+            document.getElementById("myOverlay").style.display = "block";
+        }
+         
+        function w3_close() {
+            document.getElementById("mySidebar").style.display = "none";
+            document.getElementById("myOverlay").style.display = "none";
+        }
+    </script>
+
+</body>
+
+</html>
